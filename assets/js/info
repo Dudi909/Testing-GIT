@@ -1,0 +1,118 @@
+// Variable
+// 1. Var = Old School tidak usah digunakan lagi
+var x = 0
+x = 15
+console.log(x)
+
+// variable  modern
+//1. Let
+let z = 10
+z = 5
+// let 0 // huruf awal setelah LET tidak boleh menggunakan angka atau simpbol
+// kecuali underscore "_" dan dolar "$"
+let Z0 = 10
+//let _a = test 
+let $a = 10
+// let a* = 10
+let Z = 15  //Huruf besar akan disimpan di tempat berbeda 
+let isCarBroken = true
+
+console.log(z)
+
+//2. Const (data tidak bisa diubah)
+const COLOR_RED = "red"
+const y = 5
+//y = 10
+//consolelog(y)
+
+//Type data
+//primitif
+let text = "lorem ipsum" //string  pake  quote ""
+let number = 0 //number no quote
+let kosong = null
+let undef  //undefined
+let undef2 = undefined
+let ismorning = true //bolean
+let iseveneing = false
+//non primitif
+//1. Object --> descriptip  --> contoh: deskripsi user
+const zenix = {
+        brand: 'Toyota',
+        mesin: 'hybrid',
+        warna: 'Black',
+        spec: { //nested
+                mesin: '2.0L',
+                rangka: 'TNGA'
+        }
+}
+console.log(zenix)
+console.log(zenix.mesin)
+zenix.mesin = 'diesel'
+console.log(zenix)
+
+// console. log (variable (titik) -> panggil detail 
+
+//2. array --> list --> contoh daftar user --> ked dikasi koma
+// array dimulai dari 0,1,2 danseterusnya
+
+const mobilToyota = ['GR yaris', 'reborn', 'Supra']
+
+console.log(mobilToyota[2])
+
+// untuk mengganti data dalam array
+mobilToyota[1] = "innova Reborn"
+console.log(mobilToyota[1])
+
+const mobil = [
+        {
+                Nama: 'GR yaris',
+                mesin: 'hybrid',
+                warna: 'Black',
+        },
+        {
+                Nama: 'Innova Zenix',
+                mesin: 'hybrid',
+                warna: 'Black',
+        }
+]
+
+//operator = - * & % / !
+//1. aritmatika
+const tambah = 1 + 1; 
+// angka 1 adalah operand
+// simbol "+" adalah operator
+const kali = 2 * 2;
+const hasilbagi = 2 % 2;
+const pangkat = 2**2;
+const pembagian = 4 / 2; //pake slash
+
+//2. string concatenation // menggabungkan 2 
+const a = 'a'
+const b = 'b'
+const newText = a + b;
+console.log(newText)
+console.log('1' + 1)
+// ketika string ditambah number jadi 11
+// ketika string dikurang number jadi 0
+console.log('10' + ['car', 'test'])
+
+//3. Assignment  --> pake LET
+let seribu = 1000
+seribu = seribu + 500
+seribu += 500 //angka seribu tidak ditulis lagi
+console.log(seribu)
+
+//4. logical > , < , <= , >= , === , !== , !=
+const x1 = 1;
+const x2 = 2;
+const result = x2 > x1;
+console.log(result);
+
+console.log(1 === 1) // true 
+console.log('1' == 1) // true --> tidak ada pengecekan tipe data (sting )
+console.log('1' === 1) // false --> ada pengecekaan tipe data  harus sama, kemudian nilai data
+
+console.log(1 !== 1) // not equal cek tipe data dan nilai
+console.log('2' != 2) // dicek hanya nilai data
+
+

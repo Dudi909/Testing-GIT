@@ -1,0 +1,110 @@
+html {
+    font-family: Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.4rem;
+}
+
+.btn,
+h1,
+h2,
+h3 {
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 1.7rem;
+}
+
+.bg-red {
+    background: #C74B40;
+}
+
+.navbar-nav .nav-link.active {
+    color: white;
+}
+
+.nav-link {
+    color: white
+}
+
+.text-white {
+    color: white;
+}
+#our-services ul {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+#our-services li {
+    display: flex;
+    text-indent: 0;
+    padding-bottom: 1em;
+    padding-left: 0;
+}
+
+#our-services li:before {
+    content: url(../img/check-bullet.svg);
+    padding-right: 1em;
+}
+#why-us h3 {
+    font-size: 1.1rem;
+}
+
+#why-us .card-body {
+    min-height: 200px;
+}
+.swiper-slide {
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* memindahkan posisi prev next default dari swiper ke posisi bawah testimonial */
+.swiper-button-next,
+.swiper-button-prev {
+    position: static;
+    margin-top: 2rem;
+    color: #000;
+    background: #fff;
+    border: 1px solid #C4C4C4;
+    padding: 1em 1.2em;
+    width: auto;
+    height: auto;
+    border-radius: 100%;
+}
+
+/* mengatur ukuran icon prev next karena dibuat menggunakan font */
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+/* styling untuk button prev next supaya kalau kursor ada di atas button maka background button berganti warna hijau */
+.swiper-button-next:hover,
+.swiper-button-next:focus,
+.swiper-button-prev:hover,
+.swiper-button-prev:focus {
+    background: #5CB85F;
+}
+/* styling untuk button prev next supaya kalau kursor ada di atas button maka text / icon button berganti warna putih */
+.swiper-button-next:hover:after,
+.swiper-button-next:focus:after,
+.swiper-button-prev:hover:after,
+.swiper-button-prev:focus:after {
+    color: white;
+}

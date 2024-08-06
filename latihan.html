@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+    <style>
+        .blue {
+            color: blue;
+        }
+
+        h1 {
+            color: rgb(255, 0, 51);
+            font-size: 40px;
+            font-weight: 100;
+        }
+
+        img {
+            display: block;
+            margin: 10px;
+            padding: 2px;
+            border: 1px solid rgb(0, 242, 255);
+            border-radius: 10px;
+
+
+        }
+
+        p {
+            display: inline;
+            background: lightblue;
+        }
+
+        h1 {
+            background-color: rgb(43, 192, 226);
+        }
+
+        p {
+            background: lightblue;
+        }
+
+        .img-overlay {
+            display: flex;
+            position: relative;
+            align-items: start;
+            justify-content: center;
+        }
+
+        .img-overlay img {
+            height: 100vh;
+            width: 100vw;
+        }
+
+        .img-overlay .description {
+            position: absolute;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .row img {
+            width: 31%;
+            height: fit-content;
+
+        }
+    </style>
+</head>
+
+<body>
+        <h1> CAR RENTAL GUE </h1>
+    <h1 class="blue"> CAR RENTAL GUE </h1>
+    <!-- <h2><i> Penjelasan mengenai Car Rental </i> </h2> -->
+
+    <div class="img-overlay">
+        <img height="100" src="https://th.bing.com/th/id/OIP.z6kc7Wn659FsJ0L_91eRbQHaDY?rs=1&pid=ImgDetMain"
+            alt="gambar mobil" />
+        <div class="description">
+            <h2>Toyota Veloz</h2>
+            <p> ini contoh mobil veloz </p>
+        </div>
+        
+    </div>
+    <div class="row">
+        <img height="100" src="https://th.bing.com/th/id/OIP.z6kc7Wn659FsJ0L_91eRbQHaDY?rs=1&pid=ImgDetMain"
+            alt="gambar mobil" />
+        <img height="100" src="https://th.bing.com/th/id/OIP.z6kc7Wn659FsJ0L_91eRbQHaDY?rs=1&pid=ImgDetMain"
+            alt="gambar mobil" />
+        <img height="100" src="https://th.bing.com/th/id/OIP.z6kc7Wn659FsJ0L_91eRbQHaDY?rs=1&pid=ImgDetMain"
+            alt="gambar mobil" />
+
+    </div>
+
+
+    <p> TMMIN - Car Rental adalah sebuah aplikasi untuk pengguna penyedia jasa sewa mobil </p>
+
+
+<script src="assets/js/script.js">
+
+</script>
+</body>
+
+</html>
